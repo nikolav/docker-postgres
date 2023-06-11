@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: app
+      POSTGRES_USER: app
+      POSTGRES_DB: app
+    volumes:
+      - pgds:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgds:
