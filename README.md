@@ -1,1 +1,3 @@
-Sun Jun 11 13:33:40 CEST 2023
+
+# postrges 
+  postgres://app:app@[host]:5432/app
