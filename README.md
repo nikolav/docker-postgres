@@ -1,3 +1,3 @@
 
 # postrges 
-  postgres://app:app@[host]:5432/app
+  postgres://<user>:<password>@<host>:<port>/<database>
