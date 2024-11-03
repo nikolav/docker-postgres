@@ -1,17 +1,13 @@
-version: "3"
-
 services:
   db:
     image: postgres
     ports:
       - 5544:5432
-    environment:
-      POSTGRES_PASSWORD: app
-      POSTGRES_USER: app
-      POSTGRES_DB: app
+    env_file:
+      - ./.env
     volumes:
-      - pgds:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
     restart: always
 
 volumes:
-  pgds:
+  pgdata:
