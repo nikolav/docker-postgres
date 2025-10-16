@@ -31,15 +31,11 @@ apt-get install -y \
     htop \
     net-tools \
     ufw \
-    fail2ban \
     unattended-upgrades \
     git \
     jq \
-    make \
-    nginx \
     build-essential \
-    make \
-    python3-pip | tee -a $LOG_FILE
+    make | tee -a $LOG_FILE
 
 # --- Docker Installation ---
 log_message "Installing Docker..."
